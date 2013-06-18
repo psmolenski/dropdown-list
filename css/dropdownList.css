@@ -1,0 +1,107 @@
+/* new clearfix */
+/* line 5, sass/dropdownList.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 13, sass/dropdownList.scss */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 14, sass/dropdownList.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 16, sass/dropdownList.scss */
+select.dropdown-list {
+  display: none;
+}
+
+/* line 20, sass/dropdownList.scss */
+.dropdown-wrapper {
+  display: inline-block;
+  font-family: "Tahoma", "Arial", sans-serif;
+  font-size: 14px;
+}
+/* line 25, sass/dropdownList.scss */
+.dropdown-wrapper.dropdown-disabled {
+  pointer-events: none;
+  color: #ccc;
+}
+/* line 30, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-selected-option-wrapper {
+  border: 1px solid #eeeeee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #fdfefe;
+  cursor: pointer;
+  width: 230px;
+}
+/* line 37, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-selected-option-wrapper .dropdown-selected-option {
+  padding: 10px;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* line 45, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-selected-option-wrapper .dropdown-arrow {
+  padding: 18px 16px;
+  float: right;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  border-left: 1px solid #eeeeee;
+}
+/* line 54, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-selected-option-wrapper .dropdown-arrow:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 60, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-option-list-wrapper {
+  display: none;
+  position: absolute;
+}
+/* line 64, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-option-list-wrapper ul.dropdown-option-list {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 70, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-option-list-wrapper ul.dropdown-option-list li.dropdown-option {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+/* line 82, sass/dropdownList.scss */
+.dropdown-wrapper .dropdown-option-list-wrapper ul.dropdown-option-list li.dropdown-option:hover {
+  background: #f0faff;
+}
+/* line 91, sass/dropdownList.scss */
+.dropdown-wrapper.dropdown-option-list-opened .dropdown-selected-option-wrapper .dropdown-arrow {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
